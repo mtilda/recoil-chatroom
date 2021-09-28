@@ -1,13 +1,13 @@
 import { ReactElement } from 'react';
-import TextInput from './components/TextInput';
-import MessageBoard from './components/MessageBoard';
+import Draft from './components/Draft';
+import History from './components/History';
 import './App.css';
 
 const App = (): ReactElement => {
   return (
     <div className='App'>
-      <TextInput />
-      <MessageBoard />
+      <Draft />
+      <History />
     </div>
   );
 };

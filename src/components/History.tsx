@@ -1,9 +1,9 @@
 import { ReactElement } from 'react';
 import { useRecoilValue } from 'recoil';
-import { history } from '../state/message';
+import { history } from '../state/chatroom';
 
 
-const MessageBoard = (): ReactElement => {
+const History = (): ReactElement => {
   const messages = useRecoilValue(history);
 
   return (
@@ -21,4 +21,4 @@ const MessageBoard = (): ReactElement => {
   );
 };
 
-export default MessageBoard;
+export default History;

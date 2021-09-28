@@ -1,11 +1,11 @@
 import { ChangeEvent, FormEvent } from 'react';
 import { ReactElement } from 'react';
 import { useRecoilState, useRecoilCallback } from 'recoil';
-import { textInput, send } from '../state/message';
+import { draft, send } from '../state/chatroom';
 
 
-const TextInput = (): ReactElement => {
-  const [ value, setValue ] = useRecoilState(textInput);
+const Draft = (): ReactElement => {
+  const [ value, setValue ] = useRecoilState(draft);
   const sendMessage = useRecoilCallback(send);
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -26,4 +26,4 @@ const TextInput = (): ReactElement => {
   );
 };
 
-export default TextInput;
+export default Draft;
